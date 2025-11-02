@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Up Mobile Legends</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-bg"></div> <!-- Background hero Ling -->
+
+    <header>
+        <h1>Top-Up Mobile Legends</h1>
+        <p>Pilih paket Diamond Kamu!</p>
+    </header>
+
+    <main>
+        <section class="topup">
+            <h2>Isi Diamond</h2>
+            <div class="topup-cards">
+                <div class="topup-card" data-diamond="5" data-price="1500">5 Diamond<br>Rp1.500</div>
+                <div class="topup-card" data-diamond="10" data-price="3000">10 Diamond<br>Rp3.000</div>
+                <div class="topup-card" data-diamond="20" data-price="5500">20 Diamond<br>Rp5.500</div>
+                <div class="topup-card" data-diamond="60" data-price="15000">60 Diamond<br>Rp15.000</div>
+                <div class="topup-card" data-diamond="115" data-price="30000">115 Diamond<br>Rp30.000</div>
+            </div>
+
+            <form id="topupForm">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" placeholder="Masukkan User ID" required>
+
+                <label for="serverId">Server ID:</label>
+                <input type="text" id="serverId" placeholder="Masukkan Server ID" required>
+
+                <button type="submit">Top-Up Sekarang</button>
+            </form>
+
+            <div id="confirmation" class="hidden">
+                <h3>Konfirmasi Top-Up</h3>
+                <p id="confirmationText"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Top-Up ML
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+.hero-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hero- Ling- HD.png') no-repeat center center/cover; /* Ganti URL hero Ling HD */
+    animation: moveBg 20s linear infinite;
+    z-index: -1;
+    filter: brightness(0.6); /* Membuat teks lebih terlihat */
+}
+
+@keyframes moveBg {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px #000;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100vh - 120px);
+}
+
+.topup {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    color: white;
+}
+
+.topup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topup-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.topup-card {
+    flex: 1 1 120px;
+    background: #ff0057;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.topup-card:hover {
+    transform: scale(1.1);
+    background: #ff3366;
+    box-shadow: 0 0 15px rgba(255,0,87,0.7);
+}
+
+.topup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topup input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.topup button {
+    padding: 12px;
+    background: #00c9ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.topup button:hover {
+    background: #00e0ff;
+}
+
+.hidden {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
