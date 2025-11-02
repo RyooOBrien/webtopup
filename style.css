@@ -1,3 +1,41 @@
+/* Tambahkan di bagian paling atas style.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container umum supaya tidak terlalu melebar */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Media query untuk layar kecil */
+@media (max-width: 768px) {
+  .header, .footer {
+    text-align: center;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .nav-menu {
+    display: none; /* atau dijadikan dropdown */
+  }
+  .button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
